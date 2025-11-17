@@ -1,0 +1,147 @@
+:root {
+	--jfu-green: #7ba693;
+	--jfu-tan: #dcc9a3;
+	--jfu-bg: #fdfdfd;
+	--jfu-text: #080d1c;
+	--jfu-blue: #345995;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--jfu-bg);
+	color: var(--jfu-text);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.navbar {
+	background-color: #ffffffee;
+	backdrop-filter: blur(6px);
+}
+
+.navbar-brand img {
+	height: 40px;
+	width: auto;
+	margin-right: 0.5rem;
+}
+
+.nav-link {
+	font-weight: 500;
+	color: var(--jfu-blue) !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+	color: var(--jfu-green) !important;
+}
+
+.hero {
+	padding-top: 6rem;
+	padding-bottom: 4rem;
+}
+
+.hero-title {
+	color: var(--jfu-blue);
+	font-weight: 700;
+}
+
+.badge-pill {
+	border-radius: 999px;
+}
+
+.section-padding {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.section-title {
+	color: var(--jfu-blue);
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.section-subtitle {
+	color: var(--jfu-green);
+	font-weight: 600;
+}
+
+.section-bg-alt {
+	background-color: #ffffff;
+}
+
+.text-accent {
+	color: var(--jfu-green);
+}
+
+.lead {
+	font-size: 1.05rem;
+}
+
+.highlight-card {
+	border-left: 4px solid var(--jfu-green);
+	background-color: rgba(123, 166, 147, 0.06);
+}
+
+.list-check i {
+	color: var(--jfu-green);
+	margin-right: 0.5rem;
+}
+
+#inspiration,
+#mission,
+#who-we-serve,
+#founder,
+#contact {
+	scroll-margin-top: 80px;
+}
+
+.disclaimer-text {
+	font-size: 0.8rem;
+	color: var(--jfu-bg);
+}
+
+.nondiscrimination-text {
+	font-size: 0.85rem;
+}
+
+.footer {
+	background-color: var(--jfu-blue);
+	color: #ffffff;
+	padding-top: 2.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.footer a {
+	color: #ffffff;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+
+.footer-logo {
+	max-width: 70px;
+}
+
+.tag-pill {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	background-color: var(--jfu-tan);
+	color: var(--jfu-text);
+	padding: 0.25rem 0.75rem;
+	border-radius: 999px;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.img-rounded-soft {
+	border-radius: 1rem;
+}
+
+@media (min-width: 992px) {
+	.hero {
+		padding-top: 7rem;
+		padding-bottom: 5rem;
+	}
+}
