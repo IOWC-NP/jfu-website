@@ -1,50 +1,6 @@
 <?php include realpath(dirname(dirname(__FILE__)))."/includes/env.php"; ?>
+<?php Page::addScript('scripts/screening-tool.js'); ?>
 <?php Page::printHead(); ?>
-
-</head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
-	<!-- Navbar -->
-	<nav id="mainNav" class="navbar navbar-expand-lg fixed-top shadow-sm">
-		<div class="container">
-			<a class="navbar-brand d-flex align-items-center" href="#top">
-				<img src="imgs/logo-notext.png" alt="Just For Us logo" class="img-fluid" />
-				<span class="fw-bold" style="color: var(--jfu-blue);">
-					Just For Us
-					<small class="d-block text-muted" style="font-size: 0.7rem;">An I&amp;O Wellness Center Community</small>
-				</span>
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#navbarContent"
-				aria-controls="navbarContent"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="#inspiration"><i class="fa-solid fa-heart me-1"></i>Inspiration</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#mission"><i class="fa-solid fa-bullseye me-1"></i>Mission</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#who-we-serve"><i class="fa-solid fa-users me-1"></i>Who We Serve</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#founder"><i class="fa-solid fa-person-rays me-1"></i>Founder</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact"><i class="fa-solid fa-envelope me-1"></i>Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 
 	<!-- Hero -->
 	<header id="top" class="hero">
@@ -65,8 +21,8 @@
 						<span class="tag-pill"><i class="fa-solid fa-brain"></i> Positive Support</span>
 						<span class="tag-pill"><i class="fa-solid fa-face-smile-beam"></i> Joy &amp; Belonging</span>
 					</div>
-					<a href="#who-we-serve" class="btn btn-lg" style="background-color: var(--jfu-green); color: #fff; border: none;">
-						Learn Who We Serve <i class="fa-solid fa-arrow-down ms-1"></i>
+					<a href="#" class="btn btn-lg screening-tool-trigger" style="background-color: var(--jfu-green); color: #fff; border: none;">
+						Get Started Now! <i class="fa-solid fa-heart ms-1"></i>
 					</a>
 				</div>
 				<div class="col-lg-6">
@@ -336,3 +292,5 @@
 			</div>
 		</div>
 	</footer>
+
+<?php Page::printFoot(); ?>
